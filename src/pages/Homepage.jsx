@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+// import { images } from "./images"
 
 
 function Homepage() {
@@ -17,7 +18,7 @@ function Homepage() {
       Christian Sanchez
     </div>
     <div className='myImage'>
-
+      <img src="" alt="" />
     </div>
     </div>
   )
