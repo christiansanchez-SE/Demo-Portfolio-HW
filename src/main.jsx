@@ -3,7 +3,7 @@ import { StrictMode } from "react";
 // import ReactDOM from 'react-dom/client'
 import ReactDOM from "react-dom";
 import App from './App.jsx'
-import './index.css'
+// import './index.css'
 
 // Import BrowserRouter
 import { BrowserRouter as Router} from "react-router-dom";

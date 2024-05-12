@@ -16,6 +16,9 @@ function Homepage() {
     <div className='myName'>
       Christian Sanchez
     </div>
+    <div className='myImage'>
+
+    </div>
     </div>
   )
 }

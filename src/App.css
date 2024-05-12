@@ -42,7 +42,7 @@
   margin: 1em;
 }
 
-/* ///////////////////////////////////////////// */
+/* /////////////// Resume ///////////////////// */
 
 .resumePageContainer{
   border: solid dodgerblue;
@@ -57,6 +57,26 @@
 }
 
 .return{
+  border: solid green;
+  padding: 1em;
+  margin: 1em;
+}
+
+.resumeContactInfo{
+  border: solid green;
+  padding: 1em;
+  margin: 1em;
+}
+
+.contactLi{
+  border: solid crimson;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 1em;
+}
+
+.profSum{
   border: solid green;
   padding: 1em;
   margin: 1em;

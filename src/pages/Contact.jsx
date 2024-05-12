@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div>
       <div>
-        <div>Contact</div>
+        <div>Portfolio</div>
         <div className="return">
           <Link to="/">Go back</Link>
         </div>
