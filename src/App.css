@@ -1,0 +1,63 @@
+.app{
+  border: solid black;
+  height: 100vh;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+.nav{
+  border: solid red;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+
+/* ///////////////////////////////////////////// */
+
+
+.homePage{
+  border: solid dodgerblue;
+  padding: 1em;
+  margin: 1em;
+}
+
+.secondNav{
+  border: solid gray;
+  padding: 1em;
+  margin: 1em;
+}
+
+.aboutPortCont{
+  border: solid green;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.myName{
+  border: solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+/* ///////////////////////////////////////////// */
+
+.resumePageContainer{
+  border: solid dodgerblue;
+  padding: 1em;
+  margin: 1em;
+}
+
+.resmueContainer{
+  border: solid crimson;
+  padding: 1em;
+  margin: 1em;
+}
+
+.return{
+  border: solid green;
+  padding: 1em;
+  margin: 1em;
+}
