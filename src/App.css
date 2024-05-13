@@ -42,6 +42,17 @@
   margin: 1em;
 }
 
+.myImage{
+  border: solid dodgerblue;
+  padding: 1em;
+  margin: 1em;
+}
+
+.imageOne{
+  height: 100vh;
+  border-radius: 15px;
+}
+
 /* /////////////// Resume ///////////////////// */
 
 .resumePageContainer{

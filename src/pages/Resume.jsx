@@ -70,7 +70,7 @@ function Resume() {
         {/*/////////////////////////////// Education ///////////////////////////////*/}
 
         <div className="resumeEducation">
-          <h3>WORK EXPERIENCE</h3>
+          <h3>Education</h3>
           <ul>
             <li>
               Per Scholas, Newark, New Jersey May 2024 Software Engineer
@@ -90,60 +90,114 @@ function Resume() {
         {/*/////////////////////////////// Work Experience ///////////////////////////////*/}
 
         <div className="resumeWorkExp">
+          <h3>Education</h3>
           <div className="mountSinai">
-            Mount Sinai: PRISM Research, New York, NY Clinical Research
-            Coordinator ● Engaged in systematic and standardized observational
-            human subject research, employing tailored research methodologies
-            and interview techniques under the guidance of the principal
-            investigator or senior clinical research personnel. ● Supported
-            various clinical research tasks, including facilitating informed
-            consent procedures, screening participants for eligibility, liaising
-            with sponsoring agencies for patient registration, conducting
-            questionnaire administration, performing lung function tests, and
-            procuring non-invasive participant specimens. ● Managed the
-            collection, analysis, and review of experimental data for subsequent
-            publication and presentation, ensuring meticulous attention to
-            detail, confidentiality, and data integrity. ● Demonstrated
-            proficiency in the secure handling and shipment of clinical
-            specimens in accordance with protocol specifications and regulatory
-            guidelines.
+            <p>
+              Mount Sinai: PRISM Research, New York, NY Clinical Research
+              Coordinator
+            </p>
+            <ul>
+              <li>
+                Engaged in systematic and standardized observational human
+                subject research, employing tailored research methodologies and
+                interview techniques under the guidance of the principal
+                investigator or senior clinical research personnel.
+              </li>
+              <li>
+                Supported various clinical research tasks, including
+                facilitating informed consent procedures, screening participants
+                for eligibility, liaising with sponsoring agencies for patient
+                registration, conducting questionnaire administration,
+                performing lung function tests, and procuring non-invasive
+                participant specimens.
+              </li>
+              <li>
+                Managed the collection, analysis, and review of experimental
+                data for subsequent publication and presentation, ensuring
+                meticulous attention to detail, confidentiality, and data
+                integrity.
+              </li>
+              <li>
+                Demonstrated proficiency in the secure handling and shipment of
+                clinical specimens in accordance with protocol specifications
+                and regulatory guidelines.
+              </li>
+            </ul>
           </div>
 
           <div className="reliance">
-            Reliance Vitamin, Edison, NJ July 2020 - August 2021 Quality
-            Assurance ● Supervised a team of 23 shift operators, ensuring
-            alignment with product standards and promptly addressing any
-            operational concerns. ● Implemented proactive measures to maintain
-            and enhance product quality, swiftly identifying and resolving
-            issues to prevent disruptions in production. ● Conducted
-            comprehensive root cause analyses to identify underlying factors
-            contributing to quality issues, implementing effective preventative
-            actions to mitigate recurrence.
+            <p>
+              Reliance Vitamin, Edison, NJ July 2020 - August 2021 Quality
+              Assurance
+            </p>
+            <ul>
+              <li>
+                Supervised a team of 23 shift operators, ensuring alignment with
+                product standards and promptly addressing any operational
+                concerns.
+              </li>
+              <li>
+                Implemented proactive measures to maintain and enhance product
+                quality, swiftly identifying and resolving issues to prevent
+                disruptions in production.
+              </li>
+              <li>
+                Conducted comprehensive root cause analyses to identify
+                underlying factors contributing to quality issues, implementing
+                effective preventative actions to mitigate recurrence.
+              </li>
+            </ul>
           </div>
         </div>
 
         {/*/////////////////////////////// Additional Experience ///////////////////////////////*/}
 
         <div className="additionalExp">
+          <h3>Additional Experience</h3>
           <div className="rheumatoidRes">
-            Rheumatoid Arthritis Research: ● Conducted independent research
-            studies as part of an advanced biology course. ● Investigated the
-            efficacy of long-term TNFR: Fc treatment in preventing chronic
-            inflammatory arthropathy resembling Rheumatoid Arthritis in deficit
-            mice. o Produced a comprehensive research essay, PowerPoint
-            presentation, poster, and grant proposal outlining findings and
-            treatment recommendations. o Explored solutions for managing
-            Rheumatoid Arthritis, focusing on therapeutic interventions.
+            <h4>Rheumatoid Arthritis Research:</h4>
+            <ul>
+              <li>
+                Conducted independent research studies as part of an advanced
+                biology course.
+              </li>
+              <li>
+                Investigated the efficacy of long-term TNFR: Fc treatment in
+                preventing chronic inflammatory arthropathy resembling
+                Rheumatoid Arthritis in deficit mice.
+              </li>
+              <li>
+                Produced a comprehensive research essay, PowerPoint
+                presentation, poster, and grant proposal outlining findings and
+                treatment recommendations.
+              </li>
+              <li>
+                Explored solutions for managing Rheumatoid Arthritis, focusing
+                on therapeutic interventions.
+              </li>
+            </ul>
           </div>
 
           <div className="osteoarthritisRes">
-            ● “The Effect of Tai Chi Exercises on Postural Stability and Control
-            in Older Patients with Knee Osteoarthritis” o Developed a detailed
-            PowerPoint presentation and essay elucidating research outcomes. o
-            Presented findings at the International Tai Chi Chuan Symposium in
-            Italy. o Investigated methods of treating Osteoarthritis through
-            tailored exercise regimens. o Studied the pathophysiology of
-            Osteoarthritis and proposed effective management strategies.
+            <h4>
+              The Effect of Tai Chi Exercises on Postural Stability and Control
+              in Older Patients with Knee Osteoarthritis
+            </h4>
+            <ul>
+              <li>
+                Developed a detailed PowerPoint presentation and essay
+                elucidating research outcomes. o Presented findings at the
+                International Tai Chi Chuan Symposium in Italy.
+              </li>
+              <li>
+                Investigated methods of treating Osteoarthritis through tailored
+                exercise regimens.
+              </li>
+              <li>
+                Studied the pathophysiology of Osteoarthritis and proposed
+                effective management strategies.
+              </li>
+            </ul>
           </div>
         </div>
       </div>

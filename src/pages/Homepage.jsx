@@ -18,7 +18,7 @@ function Homepage() {
       Christian Sanchez
     </div>
     <div className='myImage'>
-      <img src="" alt="" />
+    <img className='imageOne' src='./images/Untitled_Artwork.gif' alt="" />
     </div>
     </div>
   )
