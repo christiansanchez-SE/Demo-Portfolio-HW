@@ -1,0 +1,86 @@
+/* /////////////// Resume ///////////////////// */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.resumePageContainer{
+    border: solid dodgerblue;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .resmueContainer{
+    border: solid crimson;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .resumeContactInfo{
+    border: solid green;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .contactLi{
+    border: solid crimson;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .profSum{
+    border: solid green;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .resumeTechSkills{
+    border: solid dodgerblue;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .resumeEducation{
+    border: solid crimson;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .resumeWorkExp{
+    border: solid dodgerblue;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .additionalExp{
+    border: solid crimson;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .mountSinai{
+    border: solid gray;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .reliance{
+    border: solid gray;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .rheumatoidRes{
+    border: solid gray;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .osteoarthritisRes{
+    border: solid gray;
+    padding: 1em;
+    margin: 1em;
+  }

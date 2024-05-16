@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useState, useReducer } from "react";
 import { Link } from "react-router-dom";
+import ProfSum from "../dataResume/ProfSum";
+import TechSkills from "../dataResume/TechSkills";
+import Education from "../dataResume/Education";
+import WorkExp from "../dataResume/WorkExp";
+import AddExp from "../dataResume/AddExp";
+
+// const reducer = (state, action) => {
+//   switch (key) {
+//     case value:
+//       break;
+
+//     default:
+//       break;
+//   }
+// };
 
 function Resume() {
+  const [currentSum, setCurrentSum] = useState(ProfSum);
+  const [currentTech, setCurrentTech] = useState(TechSkills);
+  const [currentEd, setCurrentEd] = useState(Education);
+  const [currentWorkExp, setCurrentWorkExp] = useState(WorkExp);
+  const [currentAddExp, setCurrentAddExp] = useState(AddExp);
+
   return (
     <div className="resumePageContainer">
       <div className="resmueContainer">
@@ -29,123 +50,80 @@ function Resume() {
         {/*/////////////////////////////// Profesional Summary ///////////////////////////////*/}
 
         <div className="profSum">
-          <div>
-            <strong>PROFILE SUMMARY:</strong>
-          </div>
-          <div>
-            Dedicated and motivated software engineer professional with a solid
-            foundation in web development and computer programming. Proven track
-            record of leveraging technical expertise and leadership skills to
-            drive impactful projects, including data analysis initiatives at
-            Mount Sinai Hospital. Seeking to apply my diverse skill set and
-            passion for innovation to contribute effectively to a dynamic team.
-          </div>
-          <div>
-            <strong>Languages:</strong>
-            English and Spanish
-          </div>
+          <div className="sum">{currentSum[0].summary}</div>
+          <div className="lang">{currentSum[0].languages}</div>
         </div>
 
         {/*/////////////////////////////// Technical Skills ///////////////////////////////*/}
 
         <div className="resumeTechSkills">
           <h3>TECHNICAL SKILLS:</h3>
-          <ul>
-            <li>
-              <strong>Programming Languages:</strong> JavaScript, TypeScript
-            </li>
-            <li>
-              <strong>Web Development:</strong> HTML, CSS, JavaScript, Bootstrap
-            </li>
-            <li>
-              <strong>Database Management:</strong> MongoDB, React, NodeJS,
-              Express, SQL, NoSQL
-            </li>
-            <li>
-              <strong>Software Tools:</strong> VScode, GitHub, Gitbash
-            </li>
-          </ul>
+          <div>
+            <strong>Programming Languages:</strong> {currentTech[0].proLang}
+          </div>
+          <div>
+            <strong>Web Development:</strong> {currentTech[0].webDev}
+          </div>
+          <div>
+            <strong>Database Management:</strong> {currentTech[0].dataMan}
+          </div>
+          <div>
+            <strong>Software Tools:</strong> {currentTech[0].softwareTools}
+          </div>
         </div>
 
         {/*/////////////////////////////// Education ///////////////////////////////*/}
 
         <div className="resumeEducation">
           <h3>Education</h3>
-          <ul>
-            <li>
-              Per Scholas, Newark, New Jersey May 2024 Software Engineer
-              Training
-            </li>
-            <li>
-              Kean University, Union, New Jersey May 2019 Bachelor of Science
-              Exercise Science | Consistent Dean’s Lister
-            </li>
-            <li>
-              Robert Wood Johnson, New Brunswick, NJ December 2021 Certification
-              in Emergency Medical Technician
-            </li>
-          </ul>
+
+          <div>
+            <strong>{currentEd[0].name}</strong>
+            {currentEd[0].location}
+            {currentEd[0].date}
+            {currentEd[0].career}
+          </div>
+
+          <div>
+            <strong>{currentEd[1].name}</strong>
+            {currentEd[1].location}
+            {currentEd[1].date}
+            {currentEd[1].career}
+          </div>
+
+          <div>
+            <strong>{currentEd[2].name}</strong>
+            {currentEd[2].location}
+            {currentEd[2].date}
+            {currentEd[2].career}
+          </div>
         </div>
 
         {/*/////////////////////////////// Work Experience ///////////////////////////////*/}
 
         <div className="resumeWorkExp">
-          <h3>Education</h3>
+          <h3>Work Experience</h3>
           <div className="mountSinai">
-            <p>
-              Mount Sinai: PRISM Research, New York, NY Clinical Research
-              Coordinator
-            </p>
+            <div>{currentWorkExp[0].name}</div>
+            <div>{currentWorkExp[0].location}</div>
+            <div>{currentWorkExp[0].date}</div>
+            <div>{currentWorkExp[0].job}</div>
             <ul>
-              <li>
-                Engaged in systematic and standardized observational human
-                subject research, employing tailored research methodologies and
-                interview techniques under the guidance of the principal
-                investigator or senior clinical research personnel.
-              </li>
-              <li>
-                Supported various clinical research tasks, including
-                facilitating informed consent procedures, screening participants
-                for eligibility, liaising with sponsoring agencies for patient
-                registration, conducting questionnaire administration,
-                performing lung function tests, and procuring non-invasive
-                participant specimens.
-              </li>
-              <li>
-                Managed the collection, analysis, and review of experimental
-                data for subsequent publication and presentation, ensuring
-                meticulous attention to detail, confidentiality, and data
-                integrity.
-              </li>
-              <li>
-                Demonstrated proficiency in the secure handling and shipment of
-                clinical specimens in accordance with protocol specifications
-                and regulatory guidelines.
-              </li>
+              <li>{currentWorkExp[0].description.one}</li>
+              <li>{currentWorkExp[0].description.two}</li>
+              <li>{currentWorkExp[0].description.three}</li>
+              <li>{currentWorkExp[0].description.four}</li>
             </ul>
           </div>
-
           <div className="reliance">
-            <p>
-              Reliance Vitamin, Edison, NJ July 2020 - August 2021 Quality
-              Assurance
-            </p>
+            <div>{currentWorkExp[1].name}</div>
+            <div>{currentWorkExp[1].location}</div>
+            <div>{currentWorkExp[1].date}</div>
+            <div>{currentWorkExp[1].career}</div>
             <ul>
-              <li>
-                Supervised a team of 23 shift operators, ensuring alignment with
-                product standards and promptly addressing any operational
-                concerns.
-              </li>
-              <li>
-                Implemented proactive measures to maintain and enhance product
-                quality, swiftly identifying and resolving issues to prevent
-                disruptions in production.
-              </li>
-              <li>
-                Conducted comprehensive root cause analyses to identify
-                underlying factors contributing to quality issues, implementing
-                effective preventative actions to mitigate recurrence.
-              </li>
+              <li>{currentWorkExp[1].description.one}</li>
+              <li>{currentWorkExp[1].description.two}</li>
+              <li>{currentWorkExp[1].description.three}</li>
             </ul>
           </div>
         </div>
@@ -155,48 +133,25 @@ function Resume() {
         <div className="additionalExp">
           <h3>Additional Experience</h3>
           <div className="rheumatoidRes">
-            <h4>Rheumatoid Arthritis Research:</h4>
+            <div>
+              <h4>{currentAddExp[0].name}</h4>
+            </div>
             <ul>
-              <li>
-                Conducted independent research studies as part of an advanced
-                biology course.
-              </li>
-              <li>
-                Investigated the efficacy of long-term TNFR: Fc treatment in
-                preventing chronic inflammatory arthropathy resembling
-                Rheumatoid Arthritis in deficit mice.
-              </li>
-              <li>
-                Produced a comprehensive research essay, PowerPoint
-                presentation, poster, and grant proposal outlining findings and
-                treatment recommendations.
-              </li>
-              <li>
-                Explored solutions for managing Rheumatoid Arthritis, focusing
-                on therapeutic interventions.
-              </li>
+              <li>{currentAddExp[0].description.one}</li>
+              <li>{currentAddExp[0].description.two}</li>
+              <li>{currentAddExp[0].description.three}</li>
+              <li>{currentAddExp[0].description.four}</li>
             </ul>
           </div>
 
           <div className="osteoarthritisRes">
-            <h4>
-              The Effect of Tai Chi Exercises on Postural Stability and Control
-              in Older Patients with Knee Osteoarthritis
-            </h4>
+            <div>
+              <h4>{currentAddExp[1].name}</h4>
+            </div>
             <ul>
-              <li>
-                Developed a detailed PowerPoint presentation and essay
-                elucidating research outcomes. o Presented findings at the
-                International Tai Chi Chuan Symposium in Italy.
-              </li>
-              <li>
-                Investigated methods of treating Osteoarthritis through tailored
-                exercise regimens.
-              </li>
-              <li>
-                Studied the pathophysiology of Osteoarthritis and proposed
-                effective management strategies.
-              </li>
+              <li>{currentAddExp[1].description.one}</li>
+              <li>{currentAddExp[1].description.two}</li>
+              <li>{currentAddExp[1].description.three}</li>
             </ul>
           </div>
         </div>

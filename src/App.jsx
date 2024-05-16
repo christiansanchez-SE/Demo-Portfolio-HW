@@ -2,7 +2,11 @@ import React from "react";
 // import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import "./App.css";
+import "./styles/App.css";
+import "./styles/Resume.css";
+import "./styles/Homepage.css";
+
+
 
 import Homepage from "./pages/Homepage";
 import Resume from "./pages/Resume";
@@ -16,7 +20,7 @@ import Nav from "./components/Nav";
 export default function App() {
   return (
     <div className="app">
-      <h1>App Page</h1>
+      {/* <h1>App Page</h1> */}
       <Nav />
       <Routes>
         <Route path="/" element={<Homepage />} />

@@ -1,0 +1,21 @@
+.app{
+  background-color: #222831;
+  height: auto;
+  text-align: center;
+}
+
+.nav{
+  border: solid red;
+  background-color: #31363F;
+  text-align: center;
+  padding: 1em;
+  /* margin: 1em; */
+}
+
+/* /////////////// Back Button ///////////////////// */
+
+.return{
+  border: solid green;
+  padding: 1em;
+  margin: 1em;
+}

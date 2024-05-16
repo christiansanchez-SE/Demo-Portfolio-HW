@@ -1,0 +1,54 @@
+/* ////////////////// Homepage //////////////////// */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homePage {
+  border: solid dodgerblue;
+  background-color: #31363F;
+  padding: 1em;
+}
+
+.secondNav {
+  border: solid gray;
+  background-color: #76ABAE;
+  padding: 1em;
+  margin: 1em;
+}
+
+.aboutPortCont {
+  border: solid green;
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 1em;
+}
+
+.myName {
+  border: solid black;
+  background-color: #76ABAE;
+  padding: 1em;
+  margin: 1em;
+}
+
+.myImage {
+  border: solid dodgerblue;
+  background-color: #76ABAE;
+  padding: 1em;
+  margin: 1em;
+}
+
+.imageOne {
+  height: 45vh;
+  border-radius: 360px;
+}
+
+.shortDes {
+  border: solid crimson;
+  background-color: #76ABAE;
+  padding: 1em;
+  margin: 1em;
+}
